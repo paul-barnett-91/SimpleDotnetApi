@@ -1,0 +1,14 @@
+{
+  "name": "dotnet-portfolio",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8080, 1433],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csdevkit"]
+    }
+  },
+  "postCreateCommand": "dotnet tool install --global dotnet-ef",
+  "remoteUser": "vscode"
+}
